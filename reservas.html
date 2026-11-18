@@ -1,3 +1,101 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas | Café Altiplano</title>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <a href="index.html">
+            <img src="imagenes/imagen1.png" alt="Logo de Café Altiplano">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="carta.html">Carta</a></li>
+                <li><a href="sedes.html">Sedes</a></li>
+                <li><a href="reservas.html" aria-current="page">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <h1>Reserva tu mesa</h1>
+        <p>Completa el formulario y asegura tu lugar en Café Altiplano. Los campos con asterisco (*) son obligatorios.</p>
+
+        <!-- Formulario de reserva -->
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Tus datos</legend>
+                <p>
+                    <label for="nombre">Nombre *</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Laura Gómez" required>
+                </p>
+                <p>
+                    <label for="correo">Correo electrónico *</label>
+                    <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Detalles de la reserva</legend>
+                <p>
+                    <label for="sede">Sede *</label>
+                    <select id="sede" name="sede" required>
+                        <option value="" disabled selected>Selecciona una sede</option>
+                        <option value="bocagrande">Bocagrande</option>
+                        <option value="el-bosque">El Bosque</option>
+                        <option value="santa-lucia">Santa Lucía</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="fecha">Fecha *</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </p>
+                <p>
+                    <label for="hora">Hora *</label>
+                    <input type="time" id="hora" name="hora" required>
+                </p>
+                <p>
+                    <label for="personas">Número de personas *</label>
+                    <input type="number" id="personas" name="personas" min="1" max="12" placeholder="Ej. 4" required>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Zona preferida *</legend>
+                <p>
+                    <input type="radio" id="zona-interior" name="zona" value="interior" required>
+                    <label for="zona-interior">Interior</label>
+                </p>
+                <p>
+                    <input type="radio" id="zona-terraza" name="zona" value="terraza" required>
+                    <label for="zona-terraza">Terraza</label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Detalles adicionales</legend>
+                <p>
+                    <label for="comentarios">Comentarios</label>
+                    <textarea id="comentarios" name="comentarios" rows="4" placeholder="Cuéntanos si celebras algo o tienes alguna petición especial"></textarea>
+                </p>
+                <p>
+                    <input type="checkbox" id="confirmacion" name="confirmacion" value="si">
+                    <label for="confirmacion">Quiero recibir la confirmación por correo</label>
+                </p>
+            </fieldset>
+
+            <button type="submit">Reservar mesa</button>
+        </form>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Café Altiplano</p>
+    </footer>
+</body>
+</html>
