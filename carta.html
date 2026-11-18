@@ -1,3 +1,135 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta | Café Altiplano</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="imagenes/imagen1.png" alt="Logo de Café Altiplano">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="carta.html" aria-current="page">Carta</a></li>
+                <li><a href="sedes.html">Sedes</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Nuestra carta</h1>
+
+        <nav aria-label="Índice de la carta">
+            <ul>
+                <li><a href="#cafes-con-tamanos">Cafés con varios tamaños</a></li>
+                <li><a href="#cafes-un-tamano">Cafés de un solo tamaño</a></li>
+                <li><a href="#postres">Postres</a></li>
+            </ul>
+        </nav>
+
+        <section id="cafes-con-tamanos">
+            <h2>Cafés con varios tamaños</h2>
+            <table>
+                <caption>Precios por tamaño</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Café</th>
+                        <th scope="col">Pequeño (8 oz)</th>
+                        <th scope="col">Mediano (12 oz)</th>
+                        <th scope="col">Grande (16 oz)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Latte</th>
+                        <td>$7.000</td>
+                        <td>$8.500</td>
+                        <td>$10.000</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Capuchino</th>
+                        <td>$6.500</td>
+                        <td>$8.000</td>
+                        <td>$9.500</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+      <section id="cafes-un-tamano">
+    <h2>Cafés de un solo tamaño</h2>
+    <table>
+        <caption>Cafés con tamaño único</caption>
+        <thead>
+            <tr>
+                <th scope="col">Café</th>
+                <th scope="col">Tamaño</th>
+                <th scope="col">Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Espresso</th>
+                <td>2 oz</td>
+                <td>$5.000</td>
+            </tr>
+            <tr>
+                <th scope="row">Americano</th>
+                <td>8 oz</td>
+                <td>$6.000</td>
+            </tr>
+            <tr>
+                <th scope="row">Cortado</th>
+                <td>4 oz</td>
+                <td>$6.500</td>
+            </tr>
+            <tr>
+                <th scope="row">Cold brew</th>
+                <td>12 oz</td>
+                <td>$9.000</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="postres">
+    <h2>Postres</h2>
+    <table>
+        <caption>Postres de la casa</caption>
+        <thead>
+            <tr>
+                <th scope="col">Postre</th>
+                <th scope="col">Descripción</th>
+                <th scope="col">Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Brownie</th>
+                <td>Chocolate oscuro con nueces</td>
+                <td>$7.500</td>
+            </tr>
+            <tr>
+                <th scope="row">Cheesecake</th>
+                <td>Con salsa de frutos rojos</td>
+                <td>$10.000</td>
+            </tr>
+            <tr>
+                <th scope="row">Tres leches</th>
+                <td>Porción individual</td>
+                <td>$9.000</td>
+            </tr>
+            <tr>
+                <th scope="row">Galleta</th>
+                <td>Con chips de chocolate</td>
+                <td>$4.500</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+</body>
+</html>
