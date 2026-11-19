@@ -1,0 +1,46 @@
+/* Paleta */
+:root {
+    --color-blanco: #ffffff;
+    --color-gris-claro: #ececec;
+    --color-gris-oscuro: #4a4a4a;
+    --color-cafe: #4e342e;
+    --color-dorado: #c9a24d;
+    --color-verde-nuez: #6b7a4f;
+
+    --degradado-encabezado: linear-gradient(135deg, var(--color-cafe), var(--color-verde-nuez));
+    --sombra-suave: rgba(78, 52, 46, 0.25);
+}
+
+/* Reglas generales */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    color: var(--color-gris-oscuro);
+    background-color: var(--color-blanco);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Encabezado y pie de página */
+header {
+    color: var(--color-blanco);
+    background: var(--degradado-encabezado);
+    box-shadow: 0 0.125rem 0.5rem var(--sombra-suave);
+}
+
+footer {
+    color: var(--color-blanco);
+    background-color: var(--color-cafe);
+}
