@@ -1,0 +1,79 @@
+/* Móvil: una columna */
+header {
+    display: grid;
+    gap: 1rem;
+    justify-items: center;
+}
+
+header nav ul {
+    display: grid;
+    gap: 0.5rem;
+    justify-items: center;
+}
+
+.portada {
+    display: grid;
+    place-content: center;
+    min-height: 60vh;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.galeria {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+.sedes,
+.formulario {
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* Tableta */
+@media (min-width: 600px) {
+    main {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    header nav ul {
+        grid-template-columns: repeat(4, auto);
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .formulario {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .formulario .boton {
+        grid-column: 1 / -1;
+        justify-self: start;
+    }
+}
+
+/* Computador */
+@media (min-width: 900px) {
+    header {
+        grid-template-columns: auto 1fr;
+        justify-items: stretch;
+        align-items: center;
+    }
+
+    header nav ul {
+        justify-content: end;
+    }
+
+    .sedes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .portada {
+        min-height: 70vh;
+    }
+}

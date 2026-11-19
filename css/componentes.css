@@ -1,0 +1,81 @@
+/* Enlaces */
+a {
+    color: var(--color-verde-nuez);
+}
+
+a:hover {
+    color: var(--color-cafe);
+}
+
+a:focus-visible,
+button:focus-visible,
+:is(input, select, textarea):focus {
+    outline: 0.1875rem solid var(--color-verde-nuez);
+    outline-offset: 0.125rem;
+}
+
+/* Menú */
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header a {
+    color: var(--color-blanco);
+    text-decoration: none;
+}
+
+header a:hover {
+    color: var(--color-blanco);
+    text-decoration: underline;
+}
+
+header a:focus-visible {
+    outline-color: var(--color-blanco);
+}
+
+header nav a[aria-current="page"] {
+    padding-bottom: 0.25rem;
+    border-bottom: 0.1875rem solid var(--color-dorado);
+}
+
+/* Tablas */
+thead th {
+    color: var(--color-blanco);
+    background-color: var(--color-cafe);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--color-gris-claro);
+}
+
+/* Formulario */
+.formulario :is(input:not([type="radio"], [type="checkbox"]), select, textarea) {
+    display: block;
+    width: 100%;
+    margin-top: 0.25rem;
+    padding: 0.5rem;
+    font: inherit;
+    border: 1px solid var(--color-gris-oscuro);
+    border-radius: 0.5rem;
+}
+
+.formulario :is(input[type="radio"], input[type="checkbox"]) {
+    margin-right: 0.5rem;
+}
+
+/* Botón */
+.boton {
+    padding: 0.75rem 1.5rem;
+    font: inherit;
+    color: var(--color-blanco);
+    background-color: var(--color-verde-nuez);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: var(--color-cafe);
+}
