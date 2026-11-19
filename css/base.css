@@ -6,6 +6,7 @@
     --color-cafe: #4e342e;
     --color-dorado: #c9a24d;
     --color-verde-nuez: #6b7a4f;
+    --velo-cafe: rgba(78, 52, 46, 0.6);
 
     --degradado-encabezado: linear-gradient(135deg, var(--color-cafe), var(--color-verde-nuez));
     --sombra-suave: rgba(78, 52, 46, 0.25);
@@ -43,4 +44,16 @@ header {
 footer {
     color: var(--color-blanco);
     background-color: var(--color-cafe);
+}
+
+/* Portada */
+.portada {
+    color: var(--color-blanco);
+    background-image: linear-gradient(var(--velo-cafe), var(--velo-cafe)), url("../imagenes/portada.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.portada h1 {
+    color: var(--color-blanco);
 }
