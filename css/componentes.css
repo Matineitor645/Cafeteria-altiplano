@@ -79,3 +79,6 @@ tbody tr:nth-child(even) {
 .boton:hover {
     background-color: var(--color-cafe);
 }
+.formulario :is(input, select, textarea):hover {
+    border-color: var(--color-verde-nuez);
+}

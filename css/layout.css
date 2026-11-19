@@ -1,4 +1,16 @@
 /* Móvil: una columna */
+body {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+}
+
+header,
+.portada,
+main,
+footer {
+    grid-column: 1 / -1;
+}
+
 header {
     display: grid;
     gap: 1rem;
@@ -19,22 +31,44 @@ header nav ul {
     text-align: center;
 }
 
-.galeria {
+main {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 auto;
 }
 
+main > :is(h1, p, nav, aside, form, .sedes) {
+    grid-column: 1 / -1;
+}
+
+.galeria,
 .sedes,
 .formulario {
     display: grid;
     gap: 1.5rem;
 }
 
+.galeria {
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+.accesos__lista {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 /* Tableta */
 @media (min-width: 600px) {
     main {
         padding: 2rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     h1 {
@@ -47,8 +81,13 @@ header nav ul {
         gap: 1.5rem;
     }
 
+    main > section:first-of-type,
+    .accesos {
+        grid-column: span 2;
+    }
+
     .formulario {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .formulario .boton {
@@ -59,6 +98,10 @@ header nav ul {
 
 /* Computador */
 @media (min-width: 900px) {
+    main {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
     header {
         grid-template-columns: auto 1fr;
         justify-items: stretch;
@@ -70,7 +113,7 @@ header nav ul {
     }
 
     .sedes {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     .portada {

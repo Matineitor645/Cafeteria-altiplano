@@ -63,3 +63,7 @@ dt {
 dd {
     margin-left: 0;
 }
+.tabla :is(th, td):last-child,
+.tabla--precios :is(th, td):not(:first-child) {
+    text-align: right;
+}
