@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Café Altiplano</title>
+    <link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/tipografia.css">
+<link rel="stylesheet" href="css/cajas.css">
+<link rel="stylesheet" href="css/componentes.css">
+<link rel="stylesheet" href="css/layout.css">
+</head>
+
+<body>
+    <header>
+       <a href="index.html">
+    <img src="imagenes/imagen1.png" alt="Logo de Café Altiplano">
+</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Historia</a></li>
+                <li><a href="carta.html">Carta</a></li>
+                <li><a href="sedes.html">Sedes</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+<body class="pagina">
+
+    <!-- Portada -->
+    <section class="portada">
+      <div class="portada__texto">
+        <h1 class="portada__titulo">Nuestra historia</h1>
+        <p class="portada__subtitulo">De tres mesas a tres sedes, siempre con café de origen.</p>
+      </div>
+    </section>
+
+    <!-- Índice -->
+    <nav class="indice" aria-label="En esta página">
+      <ul class="indice__lista">
+        <li><a class="indice__enlace" href="#historia">Historia</a></li>
+        <li><a class="indice__enlace" href="#equipo">Equipo</a></li>
+        <li><a class="indice__enlace" href="#valores">Valores</a></li>
+        <li><a class="indice__enlace" href="#cifras">Cifras</a></li>
+        <li><a class="indice__enlace" href="#glosario">Glosario</a></li>
+      </ul>
+    </nav>
+
+    <!-- Historia -->
+    <section class="historia" id="historia">
+      <h2>Historia</h2>
+      <ol class="linea-tiempo">
+        <li class="linea-tiempo__hito">
+          <time class="linea-tiempo__anio" datetime="2016">2016</time>
+          <p class="linea-tiempo__texto">Abrimos el primer local en el centro: 20 m² y tres mesas.</p>
+        </li>
+        <li class="linea-tiempo__hito">
+          <time class="linea-tiempo__anio" datetime="2018">2018</time>
+          <p class="linea-tiempo__texto">Empezamos a tostar nuestro propio café.</p>
+        </li>
+        <li class="linea-tiempo__hito">
+          <time class="linea-tiempo__anio" datetime="2020">2020</time>
+          <p class="linea-tiempo__texto">Inauguramos la sede Norte.</p>
+        </li>
+        <li class="linea-tiempo__hito">
+          <time class="linea-tiempo__anio" datetime="2022">2022</time>
+          <p class="linea-tiempo__texto">Nace el programa «Café con origen» con cinco cooperativas.</p>
+        </li>
+        <li class="linea-tiempo__hito">
+          <time class="linea-tiempo__anio" datetime="2024">2024</time>
+          <p class="linea-tiempo__texto">Abrimos la sede Sur y ya somos 12 baristas.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Equipo -->
+    <section class="equipo" id="equipo">
+      <h2>Equipo</h2>
+      <div class="equipo__lista">
+        <article class="persona persona--fundadora">
+          <h3 class="persona__nombre">Lucía Paredes</h3>
+          <p class="persona__cargo">Fundadora</p>
+          <p class="persona__frase">«Un buen café empieza en la finca».</p>
+        </article>
+        <article class="persona">
+          <h3 class="persona__nombre">Mateo Quispe</h3>
+          <p class="persona__cargo">Maestro tostador</p>
+          <p class="persona__frase">«El tueste es escuchar al grano».</p>
+        </article>
+        <article class="persona">
+          <h3 class="persona__nombre">Camila Rojas</h3>
+          <p class="persona__cargo">Jefa de baristas</p>
+          <p class="persona__frase">«Cada taza es una conversación».</p>
+        </article>
+        <article class="persona">
+          <h3 class="persona__nombre">Andrés Salas</h3>
+          <p class="persona__cargo">Compras y origen</p>
+          <p class="persona__frase">«Pagar justo es parte del sabor».</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Cita -->
+    <figure class="cita">
+      <blockquote class="cita__texto">
+        <p>«Queremos que cada persona que entre se lleve algo más que un café.»</p>
+      </blockquote>
+      <figcaption class="cita__autor">— <cite>Lucía Paredes</cite>, fundadora</figcaption>
+    </figure>
+
+    <!-- Valores -->
+    <section class="valores" id="valores">
+      <h2>Valores</h2>
+      <ul class="valores__lista">
+        <li>Origen trazable</li>
+        <li>Pago justo a productores</li>
+        <li>Cero desperdicio</li>
+        <li>Un espacio para quedarse</li>
+      </ul>
+    </section>
+
+    <!-- Cifras -->
+    <section class="cifras" id="cifras">
+      <h2>Cifras</h2>
+      <table class="cifras__tabla">
+        <caption class="cifras__titulo">Café Altiplano en números</caption>
+        <thead class="cifras__encabezado">
+          <tr>
+            <th scope="col">Dato</th>
+            <th scope="col">Valor</th>
+          </tr>
+        </thead>
+        <tbody class="cifras__cuerpo">
+          <tr class="cifras__fila">
+            <th class="cifras__dato" scope="row">Sedes</th>
+            <td class="cifras__valor">3</td>
+          </tr>
+          <tr class="cifras__fila">
+            <th class="cifras__dato" scope="row">Cooperativas aliadas</th>
+            <td class="cifras__valor">5</td>
+          </tr>
+          <tr class="cifras__fila">
+            <th class="cifras__dato" scope="row">Baristas</th>
+            <td class="cifras__valor">12</td>
+          </tr>
+          <tr class="cifras__fila">
+            <th class="cifras__dato" scope="row">Años de trayectoria</th>
+            <td class="cifras__valor">8</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Glosario -->
+    <section class="glosario" id="glosario">
+      <h2>Glosario</h2>
+      <dl class="glosario__lista">
+        <dt class="glosario__termino">Tueste</dt>
+        <dd class="glosario__definicion">Proceso de calentar el grano verde para desarrollar su sabor.</dd>
+        <dt class="glosario__termino">Origen</dt>
+        <dd class="glosario__definicion">Lugar donde se cultivó el café.</dd>
+        <dt class="glosario__termino">Cata</dt>
+        <dd class="glosario__definicion">Degustación atenta para reconocer aromas y sabores.</dd>
+        <dt class="glosario__termino">Barista</dt>
+        <dd class="glosario__definicion">Persona especializada en preparar café.</dd>
+      </dl>
+    </section>
+
+    <!-- Formulario -->
+    <section class="contacto">
+      <h2>Escribenos</h2>
+      <form class="formulario" action="#" method="post">
+        <fieldset class="formulario__grupo">
+          <legend class="formulario__leyenda">Tu mensaje</legend>
+          <div class="formulario__campo">
+            <label class="formulario__etiqueta" for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+          </div>
+          <div class="formulario__campo">
+            <label class="formulario__etiqueta" for="correo">Correo</label>
+            <input type="email" id="correo" name="correo" placeholder="nombre@correo.com" required>
+          </div>
+          <div class="formulario__campo">
+            <label class="formulario__etiqueta" for="motivo">Motivo</label>
+            <select id="motivo" name="motivo" required>
+              <option value="">Elige un motivo</option>
+              <option value="consulta">Consulta</option>
+              <option value="sugerencia">Sugerencia</option>
+              <option value="trabajo">Trabajo</option>
+            </select>
+          </div>
+          <div class="formulario__campo">
+            <label class="formulario__etiqueta" for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos en qué podemos ayudarte" required></textarea>
+          </div>
+          <button class="formulario__boton" type="submit">Enviar mensaje</button>
+        </fieldset>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Pie -->
+  <footer class="pie">
+    <p>Café Altiplano.</p>
+  </footer>
+
+</body>
+</html>
